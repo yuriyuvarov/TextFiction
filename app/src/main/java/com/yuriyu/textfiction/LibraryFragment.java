@@ -47,7 +47,6 @@ public class LibraryFragment extends Fragment implements
 
 	private ArrayList<File> games;
 
-	private MyViewModel myViewModel;
 	/**
 	 * Mandatory empty constructor for the fragment manager to instantiate the
 	 * fragment (e.g. upon screen orientation changes).
@@ -63,11 +62,6 @@ public class LibraryFragment extends Fragment implements
 		mAdapter = new LibraryAdapter(getActivity(), 0, games);
 		mAdapter.setStripSuffix(true);
 
-		myViewModel = new
-				ViewModelProvider(requireActivity()).get(MyViewModel.class);
-//		Log.i("LibFrag onCreate", "file; " + myViewModel);
-//		Log.i("importOption", "file; " + myViewModel.getData().toString());
-//		Log.i("importOptionValue", "file; " + myViewModel.getData().getValue());
 	}
 
 	/**
@@ -90,13 +84,6 @@ public class LibraryFragment extends Fragment implements
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-
-//		Log.i("LibFragOptions", "file; " + myViewModel);
-//		Log.i("importOption", "file; " + myViewModel.getData().toString());
-//		Log.i("importOptionValue", "file; " + myViewModel.getData().getValue());
-//		Log.i("importOptionUri", "file; " + myViewModel.getUri());
-//		Log.i("importOptionValueUri", "file; " + myViewModel.getUri().getValue().get(0));
-
 		switch (item.getItemId()) {
 			case R.id.mi_browse: {
 				Intent browserIntent = new Intent(Intent.ACTION_VIEW,
@@ -105,9 +92,6 @@ public class LibraryFragment extends Fragment implements
 				return true;
 			}
 			case R.id.mi_import: {
-//				Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
-//			startActivityForResult(intent, RQS_OPEN_DOCUMENT_TREE);
-//				ImportTask.showSelectDialog(this, myViewModel.getUri().getValue());
 				ImportTask.showSelectDialog(this);//, myViewModel.getFiles());
 				return true;
 			}
