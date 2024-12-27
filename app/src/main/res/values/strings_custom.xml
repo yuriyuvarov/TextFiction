@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Name of the app (to be shown in the title bar) -->
+	<string name="app_name">Text Fiction</string>
+
+	<!-- The url to open when the player requests the game catalog -->
+	<string name="url_catalog">https://ifdb.org/search?browse</string>
+
+	<!-- This should be the handbook of the interpreter -->
+	<string name="url_help">https://ifdb.org/</string>
+
+	<!-- Where the interpreter can be downloaded from (for app recommendation) -->
+	<string name="url_apphome">https://ifdb.org/</string>
+
+	<!--
+    Words that are highlighted 'out of the box' (player may override this). 
+	NOTE: only lowercase letters and digits are allowed.
+	-->
+	<string-array name="initial_highlights">
+		<item>north</item>
+		<item>northeast</item>
+		<item>east</item>
+		<item>southeast</item>
+		<item>south</item>
+		<item>southwest</item>
+		<item>west</item>
+		<item>northwest</item>
+	</string-array>
+
+	<!--
+    Default values for the compass buttons, starting top/center, going 
+	clockwise, exactly eight items required.
+	-->
+
+	<string-array name="initial_compass">
+		<item>Go north</item>
+		<item>Go northeast</item>
+		<item>Go east</item>
+		<item>Go southeast</item>
+		<item>Go south</item>
+		<item>Go southwest</item>
+		<item>Go west</item>
+		<item>Go northwest</item>
+	</string-array>
+
+	<!-- JSON list of what goes into the buttonbar -->
+
+	<string name="defaultcommands">[
+  {
+    "imgid": 0,
+    "cmd": "Look",
+    "atonce": true
+  },
+  {
+    "imgid": 1,
+    "cmd": "Examine",
+    "atonce": false
+  },
+  {
+    "imgid": 8,
+    "cmd": "Get",
+    "atonce": false
+  },
+  {
+    "imgid": 5,
+    "cmd": "Open",
+    "atonce": false
+  },
+  {
+    "imgid": 6,
+    "cmd": "Close",
+    "atonce": false
+  },
+  {
+    "imgid": 7,
+    "cmd": "Inventory",
+    "atonce": true
+  },
+    {
+    "imgid": 15,
+    "cmd": "Pull",
+    "atonce": false
+  },
+    {
+    "imgid": 14,
+    "cmd": "Push",
+    "atonce": false
+  },
+  {
+    "imgid": 2,
+    "cmd": "Read",
+    "atonce": false
+  },
+  {
+    "imgid": 24,
+    "cmd": "Drop",
+    "atonce": false
+  },
+  {
+    "imgid": 22,
+    "cmd": "Give",
+    "atonce": false
+  },
+    {
+    "imgid": 11,
+    "cmd": "Wait",
+    "atonce": true
+  }
+
+]</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+		android:id="@+id/mi_settings"
+		android:icon="@drawable/ic_action_settings"
+		android:title="@string/mi_settings">
+	</item>
+	<item
+		android:id="@+id/mi_access"
+		android:icon="@drawable/ic_action_help"
+		android:title="@string/mi_access">
+	</item>
+
+</menu>

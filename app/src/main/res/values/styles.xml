@@ -1,0 +1,77 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+	-->
+	<style name="AppBaseTheme" parent="android:Theme.Light">
+		<!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+		-->
+	</style>
+
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+		<item name="compass_north">@style/compass_blank</item>
+		<item name="compass_east">@style/compass_blank</item>
+		<item name="compass_northeast">@style/compass_blank</item>
+		<item name="compass_southeast">@style/compass_blank</item>
+		<item name="compass_south">@style/compass_blank</item>
+		<item name="compass_southwest">@style/compass_blank</item>
+		<item name="compass_west">@style/compass_blank</item>
+		<item name="compass_northwest">@style/compass_blank</item>
+	</style>
+
+	<declare-styleable name="AppTheme">
+		<attr name="bubble_left" format="reference" />
+		<attr name="bubble_right" format="reference" />
+		<attr name="bubble_none" format="reference" />
+		<attr name="cmdbox" format="reference" />
+		<attr name="cmdbox_buttons" format="reference" />
+		<attr name="storyboard" format="reference" />
+		<attr name="library_item" format="reference" />
+		<attr name="library_item_text" format="reference" />
+		<attr name="library_list" format="reference" />
+		<attr name="loading" format="reference" />
+		<attr name="upperwindow" format="reference" />
+		<attr name="prompt" format="reference" />
+		<attr name="compass_north" format="reference" />
+		<attr name="compass_northeast" format="reference" />
+		<attr name="compass_east" format="reference" />
+		<attr name="compass_southeast" format="reference" />
+		<attr name="compass_south" format="reference" />
+		<attr name="compass_southwest" format="reference" />
+		<attr name="compass_west" format="reference" />
+		<attr name="compass_northwest" format="reference" />
+		<attr name="game_wallpaper" format="reference" />
+		<attr name="main_wallpaper" format="reference" />
+	</declare-styleable>
+	
+	<style name="game_wallpaper">
+	</style>
+	
+	<style name="main_wallpaper">
+	</style>
+
+	<style name="compass_blank">
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:padding">0dp</item>
+		<item name="android:src">@drawable/ic_compass_blank</item>
+	</style>
+
+	<style name="gingerbread_hack" parent="@android:style/Theme.Dialog">
+		<item name="android:bottomBright">@color/white</item>
+		<item name="android:bottomDark">@color/white</item>
+		<item name="android:bottomMedium">@color/white</item>
+		<item name="android:centerBright">@color/white</item>
+		<item name="android:centerDark">@color/white</item>
+		<item name="android:centerMedium">@color/white</item>
+		<item name="android:fullBright">@color/white</item>
+		<item name="android:fullDark">@color/white</item>
+		<item name="android:topBright">@color/white</item>
+		<item name="android:topDark">@color/black</item>
+	</style>
+
+</resources>
